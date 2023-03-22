@@ -40,12 +40,12 @@ https://id.twitch.tv/oauth2/authorize?client_id=<client_id>&redirect_uri=http://
 Then you'll be redirected to Twitch page, where you should confirm app access to account. Then you'll be redirected to your <redirect_uri> with some parameters.
 
 answer:
-http://localhost:3000/?code=<code>&scope=<scopes>&state=c3ab8aa609ea11e793ae92361f002671
+http://localhost:3000/?code=<code\>&scope=<scopes>&state=c3ab8aa609ea11e793ae92361f002671
 
 6. From this answer we need to save parameter named "code" to variable. Then make request:
 
 request:
-curl -X POST 'https://id.twitch.tv/oauth2/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'client_id=<client_id>&client_secret=<client_secret>&grant_type=authorization_code&code=<code>&redirect_uri=http://localhost:3000'
+curl -X POST 'https://id.twitch.tv/oauth2/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'client_id=<client_id>&client_secret=<client_secret>&grant_type=authorization_code&code=<code\>&redirect_uri=http://localhost:3000'
  
 answer (scopes in list format, not in uri with "+" and "%3A"):
 {"access_token":"<user_access_token>","expires_in":15080,"refresh_token":"<user_refresh_token>","scope":[<scopes>],"token_type":"bearer"}
