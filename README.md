@@ -6,6 +6,7 @@ For correct working set the initial values in the config file:
 2. Client secret
 3. AUTH_NICK
 4. channel
+
 The first two you can find in twitch dev console during creating your app. The third one is in the same place, it's a name of your app. And the fourth is the name of the target channel, the same as nickname of the streamer. In detail this and more is decribed below.
 
 ## How I created this
