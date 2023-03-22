@@ -1,0 +1,23 @@
+consts=
+{
+    "HOST": "irc.chat.twitch.tv",
+    "PORT": 6667,
+    "AUTH_NICK": "",
+    "AUTH_PASS": "oauth:",
+    "channel": ""
+},
+cid="",
+secret="",
+scopes=
+[
+    "chat:edit",
+    "chat:read",
+    "moderation:read",
+    "moderator:read:chatters",
+    "channel:manage:polls",
+    "channel:manage:predictions"
+],
+code="",
+aac="",
+urc="",
+uac=""
